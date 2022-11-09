@@ -109,7 +109,8 @@ if __name__ == '__main__':
     mean = np.array([103.939, 116.779, 123.68])
 
     _, model = dbnet()
-    model.load_weights('/home/adam/workspace/github/xuannianz/carrot/db/checkpoints/2020-01-02/db_48_2.0216_2.5701.h5', by_name=True, skip_mismatch=True)
+    #model.load_weights('/home/adam/workspace/github/xuannianz/carrot/db/checkpoints/2020-01-02/db_48_2.0216_2.5701.h5', by_name=True, skip_mismatch=True)
+    model.load_weights('/db_48_2.0216_2.5701/db_48_2.0216_2.5701.h5', by_name=True, skip_mismatch=True)
     for image_path in glob.glob(osp.join('datasets/total_text/test_images', '*.jpg')):
         image = cv2.imread(image_path)
         src_image = image.copy()
