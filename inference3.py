@@ -147,6 +147,16 @@ if __name__ == '__main__':
         #plt.imshow(bitmap, cmap="gray")
         #print(image_fname) #nombre de la imagen
         #cv2.imshow('Logo OpenCV Grises',src_image)
+        #print(image)
+        #plt.imshow(image)
+
+        #array = np.random.randint(255, size=(400, 400),dtype=np.uint8)
+        #image = Image.fromarray(array)
+        #image.show() 
+        array = np.random.randint(255, size=(400, 400),dtype=np.uint8)
+        image2 = src_image.fromarray(array)
+        image2.show() 
+
         #visualizar
 
         cv2.imwrite('test/' + image_fname, src_image)
